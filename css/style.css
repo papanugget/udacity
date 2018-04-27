@@ -34,7 +34,6 @@ body, html {
 .logo-img{
     max-width: 100%;
     margin-top: 10px;
-    margin-left: 10px;
 }
 .img-text{
     position: absolute;
@@ -61,13 +60,17 @@ body, html {
     text-align: center;
 }
 .card-title{
-    /* color: #212121 !important; */
     background-color: #9e9e9e;
     text-transform: uppercase;
 }    
 @media(max-width: 720px){ /* reduces size of image text to prevent overflow */
     .img-text{
         font-size: 2.5rem;
+    }
+}
+@media(max-width: 390px){
+    .img-text{
+        font-size: 2rem;
     }
 }
 @media(max-width: 900px){ /* removes text from nav menu at breakpoint but keeps nav icons */
